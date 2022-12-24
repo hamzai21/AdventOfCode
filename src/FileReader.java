@@ -7,6 +7,11 @@ public class FileReader {
     private Scanner reader;
     private ArrayList<Elf> elves;
 
+    /**
+     * Constructor Reads File and Parses Each Calorie Count Into Elf Object
+     * @param fileName Name of the file containing the calorie count
+     * @throws FileNotFoundException exception thrown when invalid file name
+     */
     public FileReader(String fileName) throws FileNotFoundException {
         File file = new File(fileName);
         reader = new Scanner(file);
@@ -35,6 +40,10 @@ public class FileReader {
         reader.close();
     }
 
+    /**
+     * Gets the list of elves
+     * @return the array list of elves
+     */
     public ArrayList<Elf> getElfs(){
         return this.elves;
     }

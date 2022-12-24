@@ -23,4 +23,11 @@ public class Elf {
         return this.food;
     }
 
+    @Override
+    public String toString() {
+        return "Elf{" +
+                "food=" + food +
+                ", total= " + totalCalories() +
+                " }";
+    }
 }
